@@ -1,0 +1,14 @@
+.redmeup{
+    background-color: #cc0000;
+    color: white;
+    opacity: 0.8;
+    margin-top: 15%;
+}
+
+.phonebox{
+    background-color: white;
+    opacity: 1 !important;
+    height: 100%;
+    padding:5%;
+    border-radius: 25px;
+}
