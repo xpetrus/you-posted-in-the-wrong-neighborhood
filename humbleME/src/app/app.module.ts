@@ -5,10 +5,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ChatboxesComponent } from './chatboxes/chatboxes.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SmsComponent } from './sms/sms.component';
 
 const appRoutes: Routes = [
   {
     path: 'chat', component: ChatboxesComponent
+  },
+  {
+    path: 'sms', component: SmsComponent
   },
   {
     path: '',
@@ -24,7 +28,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ChatboxesComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SmsComponent
   ],
   imports: [
     BrowserModule,
