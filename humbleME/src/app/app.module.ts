@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ChatboxesComponent } from './chatboxes/chatboxes.component';
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true }  // this is a debugging thing
-    )
+    ),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
