@@ -14,5 +14,15 @@
 }
 
 .ootpoot{
-    color: black;
+    color: white;
+}
+
+.replybox{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    
+}
+
+.btn-primary{
+    margin-bottom: 5px;
 }

@@ -13,6 +13,7 @@ export class ChatboxesComponent implements OnInit {
   selectedCategory: any = [];
   quotePool: any = [];
   selectedQuote: any = '';
+  messageOn = false;
 
   constructor(private apiService: ApiService, private route: ActivatedRoute) { }
 
@@ -29,6 +30,7 @@ export class ChatboxesComponent implements OnInit {
 
   getCategoryQuotes(cid) {
     console.log('clicked butttttt' + cid);
+    this.messageOn = true;
     this.apiService.getQuoteCategory(cid).subscribe(data => {
       this.selectedCategory = data;
       this.renderRandomQuote();
